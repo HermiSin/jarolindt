@@ -1,0 +1,124 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const LISTMONK_FORM = 'https://listmonk.app.fuenfgroschenverlag.com/subscription/form?l=ccbf5dfa-8339-4c27-bd39-23ca8ac998e0';
+---
+<BaseLayout>
+  <header class="hero">
+    <div class="fade-in">
+      <p class="eyebrow">Jaro Lindt</p>
+      <h1>Der Sommer, der zählt</h1>
+      <p class="tagline">
+        Coming-of-Age-Mystery aus deutschen Sommern — vier Kinder, ein alter Pakt,<br />
+        und fünfunddreißig Tage bis zum Glockenschlag.
+      </p>
+      <img
+        class="hero-sigill"
+        src="/sigill.png"
+        alt="Jaro Lindt — Sigill"
+        width="160"
+        height="160"
+        loading="eager"
+        decoding="async"
+      />
+      <span class="ornament" aria-hidden="true"></span>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <section class="fade-in">
+      <p class="eyebrow">Das Imprint</p>
+      <h2>Fünf Sommer. Fünf Pakte. Fünf Kinder, die zu lange hingeschaut haben.</h2>
+      <p>
+        Jaro Lindt schreibt Folk-Horror in der Schule von <em>Stephen King</em>,
+        <em>Stand By Me</em> und <em>The Wicker Man</em> — fünf Sagen, fünf deutsche
+        Provinzen, fünf Sommer aus vier Jahrzehnten BRD. Jede Saga beginnt damit,
+        dass ein Dorf, das sich zu kennen glaubt, einen Pakt erbt, den es nicht
+        erinnert. Jede Saga endet damit, dass die Kinder begreifen, was die
+        Erwachsenen seit Generationen schweigend mittragen.
+      </p>
+      <p>
+        <strong>Die Glocke von Hagedorn</strong> spielt im Schwarzwald-Sommer 1972:
+        Ein Glöckner verschwindet, eine dritte Glocke schlägt aus dem Hagedornwald,
+        und die <em>Drei Schwestern</em> — uralte Tannen — fordern bis Sankt Anna
+        ein Kind. <strong>Die Sommer von Lindenhof</strong> führt nach Franken 1986,
+        zwischen Maradona-WM und Tschernobyl-Schatten — und in einen Eisenerz-Stollen
+        am Hagelberg, der seit 1797 verschlossen sein sollte. <strong>Sechs
+        Schornsteine</strong> rückt 1984 ins Ruhrgebiet, eine Woche nach den
+        Massenentlassungen der Hagentaler Hütte: Die Sechs Stehenden unter den
+        Hochöfen verlangen ihren Tribut, weil keine Männer mehr da sind. <strong>Sieben
+        Glockenschläge</strong> spielt 1995 im Allgäu — Vroni aus Hannover kommt
+        zum achten Sommer in Pension Strobl, die Saligen Schwestern wollen das
+        81. Geschenk. <strong>Was die Flut verbirgt</strong> trägt 1998 ins
+        nordfriesische Watt, ein Jahr nach dem Verschwinden eines Vaters.
+      </p>
+      <p>
+        Folk-Horror in deutscher Provinz, getragen von Jugendbanden zwischen elf
+        und vierzehn — Sägewerkstöchter, Pfarrerssöhne, Bergmannskinder,
+        Feriengäste, Halligkinder. Bildreich, bittersüß, ehrlich. Mit Pakten,
+        die seit Generationen gehalten werden, weil das Schweigen billiger ist
+        als die Wahrheit.
+      </p>
+    </section>
+
+    <section class="fade-in">
+      <p class="eyebrow">Heft 1 — bald erhältlich</p>
+      <h2>Die Glocke von Hagedorn</h2>
+      <blockquote class="heft-card">
+        <span class="heft-meta">Hagedorn · Heft 1 · ~35.000 Wörter · Schwarzwald, Sommer 1972</span>
+        Hagedorn, Schwarzwald, 21. Juni 1972. Sommersonnenwende. Bibis Vater, der
+        Glöckner Wilhelm Vogt, läutet wie jedes Jahr um Mitternacht die Heiligen-Glocke
+        Petrus zur Wendestunde. Bibi, elf Jahre alt, schläft im Pfarrhaus-Anbau,
+        weil ihre Mutter krank ist. Sie hört die Glocke. Eine Glocke. Zwei Glocken.
+        <em>Drei.</em>
+        <br /><br />
+        Vier Kinder — der Pfarrerssohn Tobias, die Sägewerkstochter Marlene, der
+        stotternde Müllerssohn Klemens und Bibi, die Tochter des Verschwundenen —
+        finden heraus, dass der dritte Ton aus einer Glocke kommt, die offiziell
+        nicht existiert: die <em>Schweigerin</em>, gegossen 1648 aus geschmolzenen
+        Pakt-Münzen und einem keltischen Bronzehorn.
+        <br /><br />
+        Sie haben fünfunddreißig Tage Zeit. Bis Sankt Anna am 26. Juli — bis dahin
+        verlangen die Drei Schwestern, drei uralte Tannen tief im Hagedornwald,
+        ein Kind als Ausgleich für eine Schuld, die seit 1948 nicht beglichen wurde.
+        <span class="heft-status">In Vorbereitung</span>
+      </blockquote>
+    </section>
+
+    <section class="fade-in" id="newsletter">
+      <p class="eyebrow">Werde Sommerleser</p>
+      <h2>Erfahre als Erster, wenn die erste Glocke schlägt.</h2>
+      <p>
+        Kein Spam, keine Werbung, keine fremden Verteiler. Nur eine Nachricht,
+        wenn das erste Heft auf Amazon Kindle Unlimited live geht — und gelegentlich
+        ein Blick hinter die Welt: ein Schwarzwald-Glockenton, eine Stahlbach-Halde,
+        eine Wattwanderung im Juli, ein Polaroid aus einem Sommer, den die
+        Erwachsenen lieber vergessen hätten.
+      </p>
+      <div class="newsletter-frame">
+        <iframe
+          src={LISTMONK_FORM}
+          title="Newsletter-Anmeldung Jaro Lindt"
+          height="380"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <span class="signet">Jaro Lindt</span> ist ein Pen Name von
+      <a href="https://fuenfgroschenverlag.com" target="_blank" rel="noopener">Fünfgroschenverlag</a>.
+    </p>
+    <p>
+      Coming-of-Age-Folk-Horror in der Tradition von Stephen King, Stephen Chbosky,
+      <em>Stand By Me</em> und <em>The Wicker Man</em> — neu erzählt für ein Publikum,
+      das weiß, dass die schlimmsten Sommer immer die heißesten waren.
+    </p>
+    <p style="margin-top: 1.5rem; font-size: 0.78rem; color: var(--text-muted);">
+      <a href="https://fuenfgroschenverlag.com/impressum">Impressum</a> ·
+      <a href="https://fuenfgroschenverlag.com/datenschutz">Datenschutz</a>
+    </p>
+  </footer>
+</BaseLayout>

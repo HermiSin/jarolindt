@@ -1,0 +1,43 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Jaro Lindt — Coming-of-Age-Mystery aus deutschen Sommern',
+  description = 'Fünf Sagen, fünf Pakte, fünf Kinder, die zu lange hingeschaut haben. Schwarzwald 1972, Ruhrgebiet 1984, Franken 1986, Allgäu 1995, Nordfriesland 1998. Folk-Horror in der Schule von Stephen King — bald erhältlich.',
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://jarolindt.fuenfgroschenverlag.com');
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical.toString()} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical.toString()} />
+    <meta property="og:locale" content="de_DE" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#161812" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
